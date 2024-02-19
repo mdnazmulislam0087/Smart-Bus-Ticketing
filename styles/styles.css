@@ -1,10 +1,26 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-  .font-poppins{
-    font-family: 'Poppins', sans-serif;
-  }
+.font-raleway{
+  font-family: "Raleway", sans-serif;
+}
 
-  .font-anton{
-    font-family: 'Anton', sans-serif;
-  }
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+}
+
+.vertical-line {
+  border-left: 1px dotted white; /* Adjust thickness and color as needed */
+  height: 100px; /* Adjust height as needed */
+}
+
+.vertical-line-green {
+  border-left: 2px dotted green; /* Adjust thickness and color as needed */
+  /* height: 100px; Adjust height as needed */
+}
+
+.horizontal-line {
+  border-bottom: 1px dashed black; /* Adjust thickness and color as needed */
+  width: 100%; /* Adjust width as needed */
+}
