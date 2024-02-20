@@ -14,6 +14,10 @@
   border-left: 1px dotted white; /* Adjust thickness and color as needed */
   height: 100px; /* Adjust height as needed */
 }
+.vertical-line-black {
+  border-left: 1px dotted gray; /* Adjust thickness and color as needed */
+
+}
 
 .vertical-line-green {
   border-left: 2px dotted green; /* Adjust thickness and color as needed */
