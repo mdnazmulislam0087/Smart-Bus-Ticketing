@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header class="font-raleway max-w-6xl my-12 mx-auto">
+    <header id="header" class="font-raleway max-w-6xl my-12 mx-auto">
         <!-- Menue bar -->
         <div class="">
             <div class="navbar bg-base-100">
@@ -114,7 +114,7 @@
                             <p>use by January 2024</p>
                         </div>
                         <div>
-                            <h2 class="text-4xl font-bold">New15 </h2>
+                            <h2 id="coupon15"  class="text-4xl font-bold">NEW15</h2>
                             <p>Coupon code</p>
                         </div>
                     </div>
@@ -128,12 +128,12 @@
                   <div class="flex w-full lg:w-[40%] mt-24 relative rounded-box  bg-[#F78C9C]">
                     <div class="h-32 w-[99%] rounded-box place-items-center  bg-[#F78C9C] flex justify-between ml-3">
                         <div class="flex-grow">
-                            <h2 class="text-4xl font-bold">20% OFF </h2>
+                            <h2  class="text-4xl font-bold">20% OFF </h2>
                             <h2 class="text-xl font-bold">on your next purchase</h2>
                             <p>use by January 2024</p>
                         </div>
                         <div>
-                            <h2 class="text-4xl font-bold">Couple 20 </h2>
+                            <h2 id="coupon20" class="text-4xl font-bold">Couple 20 </h2>
                             <p class="text-center">Coupon code</p>
                         </div>
                     </div>
@@ -152,7 +152,7 @@
           </div>
 
     </header>
-    <main class="font-raleway max-w-[1440px] my-12 mx-auto ">
+    <main id="main" class="font-raleway max-w-[1440px] my-12 mx-auto ">
         <!-- Bus options -->
         <div class="bg-[#F7F8F8] rounded-t-[88px]  border-t-2 border-t-green-500 max-w-6xl my-12 mx-auto">
             <!-- option-01 _text-->
@@ -174,7 +174,7 @@
 
                         </div>
                         <div class="flex">
-                            <button class="btn btn-primary bg-[#edf0ed] mt-7 text-green-500 border-green-500 text-center"><img src="images/seat-green.png" alt=""><span>40</span> Seats Left</button>
+                            <button class="btn btn-primary bg-[#edf0ed] mt-7 text-green-500 border-green-500 text-center"><img src="images/seat-green.png" alt=""><span id ="total_seat">40</span> Seats Left</button>
                         </div>
                     </div>
                     <div class="bg-[#F7F8F8]">
@@ -189,9 +189,9 @@
                         </div>
                         <div class="horizontal-line"></div>
                         <div class="flex justify-between gap-2 mt-3">
-                            <button class="btn btn-wide bg-[#0307120D]">Wide</button>
-                            <button class="btn btn-wide bg-[#0307120D]">Wide</button>
-                            <button class="btn btn-wide bg-[#0307120D] ">Wide</button>
+                            <button class="btn btn-wide bg-[#0307120D]">Boarding Point - Laxmipur</button>
+                            <button class="btn btn-wide bg-[#0307120D]">Dropping Point - Bogura</button>
+                            <button class="btn btn-wide bg-[#0307120D] ">Est. Time - 11 Hour </button>
                         </div>
 
                     </div>
@@ -200,7 +200,7 @@
                 <div class="vertical-line-green"></div>
                 <div class="flex flex-col justify-center items-center">
                     <img src="images/fare.png" alt="">
-                    <h2 class="text-xl font-bold">550 Taka</h2>
+                    <h2 class="text-xl font-bold"><span id="price-per-seat">550</span> Taka</h2>
                     <h2 class="text-m"> Per Seat</h2>
                     
                 
@@ -237,112 +237,95 @@
                 <div class="grid gap-5 grid-cols-5 p-7">
                     <button class="btn btn-xs col-start-5 w-[70px] rounded-md"><img src="images/seat-gray.png" alt=""></button>
                     <p>A</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">A1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">A2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">A3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">A4</button>
-                    <p>B</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">B1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">B2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">B3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">B4</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">A1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">A2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">A3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">A4</button>
+                    <p>B</p> 
+                    <button class="seat btn btn-xs w-[70px] rounded-md">B1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">B2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">B3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">B4</button>
                     <p>C</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">C1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">C3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">C2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">C4</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">C1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">C3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">C2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">C4</button>
                     <p>D</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">D1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">D2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">D3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">D4</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">D1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">D2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">D3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">D4</button>
                     <p>E</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">E1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">E2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">E3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">E4</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">E1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">E2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">E3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">E4</button>
                     <p>F</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">F1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">F2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">F3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">F4</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">F1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">F2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">F3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">F4</button>
                     <p>G</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">G1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">G2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">G3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">G4</button>
-                    <p>H</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">H1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">H2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">H3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">H4</button>
-                    <p>I</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">I1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">I2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">I3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">I4</button>
-                    <p>J</p>
-                    <button class="btn btn-xs w-[70px] rounded-md">J1</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">J2</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">J3</button>
-                    <button class="btn btn-xs w-[70px] rounded-md">J4</button>
-
-                </div>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">G1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">G2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">G3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">G4</button>
+                    <p>H</p> 
+                    <button class="seat btn btn-xs w-[70px] rounded-md">H1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">H2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">H3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">H4</button>
+                    <p>I</p> 
+                    <button class="seat btn btn-xs w-[70px] rounded-md">I1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">I2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">I3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">I4</button>
+                    <p>J</p> 
+                    <button class="seat btn btn-xs w-[70px] rounded-md">J1</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">J2</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">J3</button>
+                    <button class="seat btn btn-xs w-[70px] rounded-md">J4</button>
+ 
+                </div> 
             </div>
             <div class="vertical-line-black"></div>
 
             <div >
                 <h2 class="text-3xl font-bold">Select Your Seat</h2>
-                <div class="horizontal-line w-full"></div>
+                <div class="horizontal-line w-full mt-4 mb-4"></div>
                 <div class="bg-[#F7F8F8]">
-                    <div class="overflow-x-auto ">
-                        <table class="table">
-                          <!-- head -->
-                          <thead>
-                            <tr>
-                              <th></th>
-                              <th>Seat <span> 0 </span></th>
-                              <th>Class</th>
-                              <th>Price</th>
-                            </tr>
-                          </thead>
-                                                    
-                          <!-- <tbody> -->
-                            <!-- row 1 -->
-                            <!-- <tr> -->
-                              <!-- <th>1</th> -->
-                              <!-- <td>Cy Ganderton</td> -->
-                              <!-- <td>Quality Control Specialist</td> -->
-                              <!-- <td>Blue</td> -->
-                            <!-- </tr> -->
-                            <!-- row 2 -->
-                            <!-- <tr> -->
-                              <!-- <th>2</th> -->
-                              <!-- <td>Hart Hagerty</td> -->
-                              <!-- <td>Desktop Support Technician</td> -->
-                              <!-- <td>Purple</td> -->
-                            <!-- </tr> -->
-                            <!-- row 3 -->
-                            <tr>
-                              <td>Total Price</td>
-                              <td></td>
-                              <td colspan="2" class="text-right" >BDT <span>0</span></td>
-                            </tr>
-                          </tbody>
-                                                     
-                        </table>
+                    <div class="flex justify-around ">
+                      <div class="flex gap-2 ">
+                        <h2>Seat</h2> 
+                        <div class="w-5 rounded-full bg-green-700">
+                          <span id="seat-selected" class="flex items-center justify-center"> 0 </span>
+                        </div>
                       </div>
-                      <div>
+                      <div>Class</div>
+                      <div>Price</div>
+                      </div>
+                      <div class="horizontal-line w-full mt-4 mb-4"></div>
+                      <!-- Empty cart to be updated accordingly -->
+                      <div id="selected-seat-container">
+
+                      </div>
+                      <div class="horizontal-line w-full mt-4 mb-4"></div>
+                      <div class="flex justify-around mt-5">
+                        <h2>Total Price</h2>
+                        <p> BDT <span id="total-cost">0</span> </p> 
+                        </div>
+                      <div class="mt-5">
 
                           <label class="input input-bordered flex items-center justify-between">
-                            <input type="text" class="flex-grow" placeholder="Search" />
-                            <button class="btn btn-primary bg-[#1DD100] flex justify-end">Coupons</button>
+                            <input type="text" class="flex-grow" placeholder="Search" id= "apply-coupn" />
+                            <button onclick="grandTotal('applu-btn')"  class="btn btn-primary bg-[#1DD100] flex justify-end">Coupons</button>
                           </label>
 
                       </div>
                       <div class="flex justify-between p-5">
                         <h2>Grand Total</h2>
-                        <p>BDT<span>0</span></p>
+                        <p>BDT<span id = "grand-total" >0</span></p>
                       </div>
 
                 </div>
@@ -369,7 +352,7 @@
 
                       <!-- button -->
                       <label class="form-control w-full max-w-xs">
-                        <button class="btn btn-primary bg-[#1DD100]  text-center mt-5">Next</button>
+                        <button id= "next" class="btn btn-primary bg-[#1DD100]  text-center mt-5">Next</button>
                         <div class="label">
                           <span class="label-text-alt underline">Terms and conditions</span>
                           <span class="label-text-alt underline">Cancelation policy</span>
@@ -385,7 +368,7 @@
 
     <!-- Footer font-raleway max-w-6xl my-12 mx-auto -->
 
-    <footer class="footer p-10 bg-base-200 text-base-content font-raleway max-w-6xl  mx-auto">
+    <footer id="footer1" class="footer p-10 bg-base-200 text-base-content font-raleway max-w-6xl  mx-auto">
         <nav>
           <h6 class="footer-title">Services</h6> 
           <a class="link link-hover">Branding</a>
@@ -407,7 +390,7 @@
           <a class="link link-hover">Cookie policy</a>
         </nav>
       </footer> 
-      <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 font-raleway max-w-6xl mx-auto">
+      <footer id="footer2" class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 font-raleway max-w-6xl mx-auto">
         <aside class="items-center grid-flow-col">
           <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
           <p>ACME Industries Ltd. <br>Providing reliable tech since 1992</p>
@@ -422,6 +405,20 @@
       </footer>
 
     <!-- Footer -->
+
+    <!-- Another footer to show in pop up -->
+    <div id="success" class="hidden">
+      <div class="font-raleway max-w-6xl flex flex-col justify-center items-center mx-auto">
+        <img src="images/success.png" alt="">
+        <h2 class="text-green-600 text-xl font-semibold">SUCCESS</h2>
+        <h2>Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.</h2>
+        <p> Shortly you will find a confirmation in your email</p>
+        <button  class="btn btn-primary w-[25%] bg-[#47b634] flex justify-center">Success</button>
+    </div>
+
+    </div>
+
+    
 
     <script src="scripts/utility.js"></script>
     <script src="scripts/ticketing.js"></script>
