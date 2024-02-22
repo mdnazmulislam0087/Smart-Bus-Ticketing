@@ -66,6 +66,8 @@ for (seat of allSeat){
 
 
         // Next button check
+
+        
         document.getElementById("next").addEventListener("click",function(){
             const header = document.getElementById("header")
             header.classList.add('hidden')
